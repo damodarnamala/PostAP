@@ -7,9 +7,12 @@
 
 import SwiftUI
 struct ErrorScreen: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     let error: (title:String, description:String)
     var body: some View {
-        VStack (spacing: 16){
+        VStack (spacing: 16) {
+            Spacer()
             Text(error.title)
                 .font(.headline)
                 .foregroundColor(.primary)
@@ -25,6 +28,17 @@ struct ErrorScreen: View {
             Image(systemName: "exclamationmark.icloud.fill")
                 .foregroundColor(.red)
                 .font(.largeTitle)
+            Spacer()
+            Button {
+                presentationMode.wrappedValue.dismiss()
+            } label: {
+                Text("Dismiss")
+                    .font(.subheadline)
+                    .foregroundColor(.primary)
+            }
+            .padding()
+            .background(Color.primary.opacity(0.15))
+            .cornerRadius(8)
         }
     }
 }

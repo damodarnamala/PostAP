@@ -27,6 +27,7 @@
 		B2FB819D28CC5CB600C7754F /* URLRequest+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB819728CC5CB600C7754F /* URLRequest+Extention.swift */; };
 		B2FB819E28CC5CB600C7754F /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB819828CC5CB600C7754F /* HttpError.swift */; };
 		B2FB81A028CC5CB600C7754F /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB819A28CC5CB600C7754F /* HttpMethod.swift */; };
+		B2FB81A228CC691800C7754F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB81A128CC691800C7754F /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		B2FB819728CC5CB600C7754F /* URLRequest+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "URLRequest+Extention.swift"; path = "../../../../Http/Sources/Http/URLRequest+Extention.swift"; sourceTree = "<group>"; };
 		B2FB819828CC5CB600C7754F /* HttpError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpError.swift; path = ../../../../Http/Sources/Http/HttpError.swift; sourceTree = "<group>"; };
 		B2FB819A28CC5CB600C7754F /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpMethod.swift; path = ../../../../Http/Sources/Http/HttpMethod.swift; sourceTree = "<group>"; };
+		B2FB81A128CC691800C7754F /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 				B2B9CF4428CC3A7500EC3055 /* PostsListView.swift */,
 				B2B9CF4528CC3A7500EC3055 /* ErrorView.swift */,
 				B2B9CF5E28CC3BF200EC3055 /* LoadingView.swift */,
+				B2FB81A128CC691800C7754F /* ActivityIndicator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				B2B9CF5528CC3A7500EC3055 /* PostUseCase.swift in Sources */,
 				B2B9CF5128CC3A7500EC3055 /* PostModel.swift in Sources */,
 				B2B9CF5328CC3A7500EC3055 /* PostsListView.swift in Sources */,
+				B2FB81A228CC691800C7754F /* ActivityIndicator.swift in Sources */,
 				B2FB81A028CC5CB600C7754F /* HttpMethod.swift in Sources */,
 				B2B9CEF728CB53F200EC3055 /* PostAppApp.swift in Sources */,
 				B2FB819D28CC5CB600C7754F /* URLRequest+Extention.swift in Sources */,
