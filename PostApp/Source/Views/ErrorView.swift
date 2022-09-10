@@ -7,18 +7,30 @@
 
 import SwiftUI
 struct ErrorScreen: View {
-    let error: String
+    let error: (title:String, description:String)
     var body: some View {
-        VStack {
-            Text(error).font(.headline)
-                .foregroundColor(.red)
+        VStack (spacing: 16){
+            Text(error.title)
+                .font(.headline)
+                .foregroundColor(.primary)
                 .multilineTextAlignment(.center)
+                .font(.headline)
+            
+            Text(error.description)
+                .font(.footnote)
+                .foregroundColor(.primary)
+                .multilineTextAlignment(.center)
+                .font(.headline)
+            
+            Image(systemName: "exclamationmark.icloud.fill")
+                .foregroundColor(.red)
+                .font(.largeTitle)
         }
     }
 }
 
 extension ErrorScreen {
-    static func present(with error: String) {
+    static func present(with error: (title: String, description: String)) {
         let view = UIHostingController(rootView: ErrorScreen(error: error))
         UIApplication.shared.topMostViewController()?.present(view, animated: true)
     }
