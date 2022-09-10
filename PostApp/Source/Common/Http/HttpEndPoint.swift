@@ -32,7 +32,7 @@ public func sendRequest<T: Decodable>(request: URLRequest) -> AnyPublisher<T, Ht
         .decode(type: T.self, decoder: JSONDecoder())
         .mapError({ error -> HttpError in
             print("ERROR: Check response body matched or not, \(request.url?.absoluteString ?? "")")
-            return HttpError.dataMisMatch
+            return HttpError.dataMisMatchOrUnableToParseError
         })
         .eraseToAnyPublisher()
 }

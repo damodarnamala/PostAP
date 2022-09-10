@@ -22,10 +22,10 @@ extension URLRequest {
         var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = method?.rawValue
         request.allHTTPHeaderFields = headers
-        request.allowsCellularAccess = true
-        request.cachePolicy = .returnCacheDataElseLoad
-        request.timeoutInterval = 30
-        request.httpShouldHandleCookies = false
+//        request.allowsCellularAccess = true
+//        request.cachePolicy = .returnCacheDataElseLoad
+//        request.timeoutInterval = 30
+//        request.httpShouldHandleCookies = false
         return request
     }
 }

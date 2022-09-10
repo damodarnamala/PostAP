@@ -31,7 +31,7 @@ public func handle(compltion: Subscribers.Completion<HttpError>, state: inout Fe
         case .failure(let error):
             print("ERROR: API Response")
             state = .finished
-            ErrorScreen.present(with: error.localizedDescription)
+            ErrorScreen.present(with: error.value)
         case .finished:
             state = .finished
     }
