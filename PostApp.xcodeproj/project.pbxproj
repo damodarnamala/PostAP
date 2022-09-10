@@ -123,8 +123,8 @@
 		B29E00CE28CC75EF003B2733 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				B29E00CF28CC75EF003B2733 /* PostsListView.swift */,
 				B29E00D028CC75EF003B2733 /* LoadingView.swift */,
+				B2FB81A128CC691800C7754F /* ActivityIndicator.swift */,
 				B29E00D128CC75EF003B2733 /* ErrorView.swift */,
 			);
 			path = UI;
@@ -228,7 +228,7 @@
 		B2B9CF4328CC3A7500EC3055 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B2FB81A128CC691800C7754F /* ActivityIndicator.swift */,
+				B29E00CF28CC75EF003B2733 /* PostsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

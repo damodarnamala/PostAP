@@ -8,7 +8,6 @@
 import Foundation
 import Combine
 
-
 struct PostService: HttpEndPoint {
     enum EndPointPath {
         case post
